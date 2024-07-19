@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.gradient {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+/*********************************** Page Login && Singin******************************/
+.titre-form{
+  font-weight: bold;
+  font-size: 26px;
+}
+.titre-form-div{
+margin-bottom: 30px;
+}
+.container-login{
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+}
+form{
+  width: 100%;
+}
+.container-form-login{
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+  width: 50%;
+}
+.div-logo-form{
+  display: flex;
+  justify-content: center;
+}
+img{
+  object-fit: cover;
+}
+
+@media (max-width:750px) {
+  .container-login {
+    flex-direction: column;
+  }
+  .container-form-login{
+    padding-top: 0px;
+    width: 100%;
+  }
+}
+/*****************************************  page profile *********************************/
+.container-form-profile{
+  margin: 20px auto;
+  width: 80%;
+}
+
+/***************************************** page transaction ******************************/
+.container-transaction{
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+
+.container-form-transaction{
+  width: 50%;
+ display:flex;
+ justify-content: center;
+}
+
+.listeCards{
+  height:fit-content;
+  background-color: #fdfdfd;
+}
+
+.container-listeCards{
+  display:flex;
+  justify-content: center;
+  width: 50%;
+}
+
+@media (max-width:950px) {
+  .container-transaction{
+flex-direction: column-reverse; 
+ }
+ .container-form-transaction,.container-listeCards{
+  width: 100%;
+}
+.container-listeCards{
+  margin-top: 40px;
+  padding: 0 20px;
+}
+}
+
+/******************************************* page liste cards ***********************************/
+
+.height-grid{
+  min-height:calc(100vh - 64px - 208px);
+  margin: 30px auto;
+}
+
+.height-card{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%)
+}
+
+.content-card{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+p{
+  width: fit-content;
+}
+
+.details-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-card{
+width: 100%;
+display: flex;
+justify-content: center;}
+
+.div-edit{
+  top:0px;
+  right:20px;
+}
+
+@media (max-width:600px) {
+  .height-grid{
+   display: flex;
+   flex-direction: column;
+  }
+}
+
+/************************************************** page graphe *******************************************/
+
+.div-chart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  margin: auto ;
+  min-height:calc(100vh - 64px - 208px);
+  padding:  20px;
+  margin-bottom: 40px;
+}
+
+
+@media (max-width:900px) {
+  .div-chart{
+width: 100%;    
+  }
+}
+
+/*********** Option *******************/
+.container-option{
+  display: flex;
+flex-direction: column;
+ width: 80px;
+justify-content: center;
+  height: 60px;
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  padding: 5px;
+}
+
+.div-option h3{
+  color: white;
+  font-weight: medium;
+  z-index: 10;
+}
+
+/************************ Bread componenet ******************/
+
+.container-bread {
+  width: 100%;
+  margin: 20px 0 5px 30px;
+}
